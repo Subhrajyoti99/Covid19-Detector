@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bruh</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand">Covid Detector</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="container mt-4">
+        <h2 id="covid-19-detector">Covid-19 Detection with Two Stage Transfer Learning</h2>
+        <p>The model is based on a two stage transfer learning method. First the COIVDX dataset is trained on Resnet50. The deep features are extracted and passed through a network with Squeeze Excitaion layers. This secondary network trained with resnet features predicts the final result.</p>
+        <h3 id="architecture">Architecture</h3>
+        <p><img src="https://user-images.githubusercontent.com/31564734/122194946-8c1b4f80-ceb3-11eb-9a2a-49a16666ceac.png" alt="squeeze"></p>
+        <p>The blocks are made up of 1x1 convolution, a squeeze excitation and adaptive average pooling layer.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
